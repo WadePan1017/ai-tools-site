@@ -282,6 +282,14 @@ export const tools = [
     tags: ['在线IDE', '部署', '协作'],
     gradient: 'from-orange-500 to-red-500',
   },
+  {
+    name: 'OpenAI Codex',
+    description: 'OpenAI 推出的 AI 编程 API 和 CLI 工具，可将自然语言转化为代码，支持自动完成任务',
+    url: 'https://platform.openai.com/docs/guides/code',
+    category: 'coding',
+    tags: ['OpenAI', 'API', '自然语言编程'],
+    gradient: 'from-green-500 to-emerald-600',
+  },
 
   // ========== 音频音乐 ==========
   {
