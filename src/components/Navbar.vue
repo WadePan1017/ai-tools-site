@@ -11,7 +11,7 @@ const navItems = [
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-dark-lighter/50">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-dark-border/50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#hero" class="text-xl font-bold text-white">
         <span class="text-primary">AI</span>Tools
@@ -36,7 +36,7 @@ const navItems = [
       </button>
     </div>
 
-    <div v-if="isMenuOpen" class="md:hidden bg-dark-light border-t border-dark-lighter">
+    <div v-if="isMenuOpen" class="md:hidden bg-dark-light border-t border-dark-border">
       <a
         v-for="item in navItems"
         :key="item.name"

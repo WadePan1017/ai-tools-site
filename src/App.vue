@@ -41,7 +41,7 @@ const filteredTools = computed(() => {
           v-model="searchQuery"
           type="text"
           placeholder="搜索 AI 工具..."
-          class="w-full pl-12 pr-4 py-3 bg-dark-light border border-dark-lighter rounded-xl text-white placeholder-gray focus:outline-none focus:border-primary transition-colors"
+          class="w-full pl-12 pr-4 py-3 bg-dark-light border border-dark-border rounded-xl text-white placeholder-gray focus:outline-none focus:border-primary transition-colors"
         />
       </div>
 
@@ -55,7 +55,7 @@ const filteredTools = computed(() => {
             'px-4 py-2 rounded-full text-sm font-medium transition-all',
             activeCategory === cat.id
               ? 'bg-primary text-white'
-              : 'bg-dark-light border border-dark-lighter text-gray hover:text-white hover:border-primary/30'
+              : 'bg-dark-light border border-dark-border text-gray hover:text-white hover:border-primary/30'
           ]"
         >
           <span class="mr-1">{{ cat.icon }}</span>{{ cat.name }}

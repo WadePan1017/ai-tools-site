@@ -1,5 +1,5 @@
 <template>
-  <footer id="about" class="py-8 px-6 border-t border-dark-lighter mt-12">
+  <footer id="about" class="py-8 px-6 border-t border-dark-border mt-12">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="text-gray text-sm">
         AI 工具导航站 — 发现优质 AI 工具
