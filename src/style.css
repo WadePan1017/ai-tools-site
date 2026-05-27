@@ -69,3 +69,19 @@ body {
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out forwards;
 }
+
+/* 定价标签 */
+.pricing-free {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+.pricing-paid {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+.pricing-freemium {
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+}

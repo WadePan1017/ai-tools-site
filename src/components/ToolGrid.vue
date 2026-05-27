@@ -2,13 +2,14 @@
 import ToolCard from './ToolCard.vue'
 
 defineProps({
-  tools: { type: Array, required: true }
+  tools: { type: Array, required: true },
+  onVisit: { type: Function, default: () => {} }
 })
 </script>
 
 <template>
   <div id="tools" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <ToolCard v-for="tool in tools" :key="tool.name" :tool="tool" />
+    <ToolCard v-for="tool in tools" :key="tool.name" :tool="tool" :on-visit="onVisit" />
   </div>
 
   <div v-if="tools.length === 0" class="text-center py-20">

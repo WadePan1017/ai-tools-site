@@ -19,6 +19,8 @@ export const tools = [
     category: 'chat',
     tags: ['OpenAI', '多模态', '插件'],
     gradient: 'from-emerald-500 to-teal-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Claude',
@@ -27,6 +29,8 @@ export const tools = [
     category: 'chat',
     tags: ['长文本', '编程', '安全'],
     gradient: 'from-orange-500 to-amber-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Gemini',
@@ -35,6 +39,8 @@ export const tools = [
     category: 'chat',
     tags: ['Google', '多模态', '免费'],
     gradient: 'from-blue-500 to-cyan-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: 'DeepSeek',
@@ -43,6 +49,8 @@ export const tools = [
     category: 'chat',
     tags: ['开源', '推理', '编程'],
     gradient: 'from-indigo-500 to-blue-600',
+    pricing: 'free',
+    addedAt: '2025-02-01',
   },
   {
     name: '通义千问',
@@ -51,6 +59,8 @@ export const tools = [
     category: 'chat',
     tags: ['阿里', '中文', '全能'],
     gradient: 'from-purple-500 to-pink-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: '文心一言',
@@ -59,6 +69,8 @@ export const tools = [
     category: 'chat',
     tags: ['百度', '中文', '知识图谱'],
     gradient: 'from-sky-500 to-blue-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: '豆包',
@@ -67,6 +79,8 @@ export const tools = [
     category: 'chat',
     tags: ['字节', '语音', '免费'],
     gradient: 'from-green-500 to-emerald-600',
+    pricing: 'free',
+    addedAt: '2025-03-01',
   },
   {
     name: 'Kimi',
@@ -75,6 +89,8 @@ export const tools = [
     category: 'chat',
     tags: ['长文本', '中文', '文件处理'],
     gradient: 'from-rose-500 to-pink-600',
+    pricing: 'free',
+    addedAt: '2025-02-15',
   },
   {
     name: '智谱清言',
@@ -83,6 +99,8 @@ export const tools = [
     category: 'chat',
     tags: ['清华', '开源', '学术'],
     gradient: 'from-blue-600 to-indigo-700',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: '腾讯混元',
@@ -91,6 +109,8 @@ export const tools = [
     category: 'chat',
     tags: ['腾讯', '微信', '多模态'],
     gradient: 'from-sky-400 to-blue-500',
+    pricing: 'free',
+    addedAt: '2025-03-15',
   },
   {
     name: '讯飞星火',
@@ -99,6 +119,8 @@ export const tools = [
     category: 'chat',
     tags: ['讯飞', '语音', '教育'],
     gradient: 'from-blue-400 to-cyan-500',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Grok',
@@ -107,6 +129,8 @@ export const tools = [
     category: 'chat',
     tags: ['xAI', '实时', '幽默'],
     gradient: 'from-slate-600 to-zinc-800',
+    pricing: 'freemium',
+    addedAt: '2025-04-01',
   },
 
   // ========== 图像生成 ==========
@@ -117,6 +141,8 @@ export const tools = [
     category: 'image',
     tags: ['艺术', '高质量', '付费'],
     gradient: 'from-violet-500 to-purple-600',
+    pricing: 'paid',
+    addedAt: '2025-01-15',
   },
   {
     name: 'DALL·E 3',
@@ -125,6 +151,8 @@ export const tools = [
     category: 'image',
     tags: ['OpenAI', '文本生成', '精准'],
     gradient: 'from-fuchsia-500 to-pink-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Stable Diffusion',
@@ -133,6 +161,8 @@ export const tools = [
     category: 'image',
     tags: ['开源', '本地部署', '社区'],
     gradient: 'from-slate-500 to-zinc-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Flux',
@@ -141,6 +171,8 @@ export const tools = [
     category: 'image',
     tags: ['新一代', '高质量', '开源'],
     gradient: 'from-gray-600 to-stone-800',
+    pricing: 'free',
+    addedAt: '2025-05-01',
   },
   {
     name: '可灵 AI',
@@ -149,6 +181,8 @@ export const tools = [
     category: 'image',
     tags: ['快手', '中文', '免费额度'],
     gradient: 'from-orange-500 to-red-600',
+    pricing: 'freemium',
+    addedAt: '2025-04-15',
   },
   {
     name: '通义万相',
@@ -157,6 +191,8 @@ export const tools = [
     category: 'image',
     tags: ['阿里', '中文', '电商'],
     gradient: 'from-amber-500 to-orange-600',
+    pricing: 'free',
+    addedAt: '2025-03-01',
   },
   {
     name: '即梦',
@@ -165,6 +201,8 @@ export const tools = [
     category: 'image',
     tags: ['字节', '中文', '多模态'],
     gradient: 'from-pink-500 to-rose-600',
+    pricing: 'freemium',
+    addedAt: '2025-05-10',
   },
 
   // ========== 视频生成 ==========
@@ -175,6 +213,8 @@ export const tools = [
     category: 'video',
     tags: ['OpenAI', '长视频', '高质量'],
     gradient: 'from-red-500 to-orange-600',
+    pricing: 'paid',
+    addedAt: '2025-02-01',
   },
   {
     name: 'Runway',
@@ -183,6 +223,8 @@ export const tools = [
     category: 'video',
     tags: ['专业', '运动控制', '电影级'],
     gradient: 'from-cyan-500 to-blue-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Pika',
@@ -191,6 +233,8 @@ export const tools = [
     category: 'video',
     tags: ['轻量', '快速', '创意'],
     gradient: 'from-yellow-500 to-orange-600',
+    pricing: 'freemium',
+    addedAt: '2025-03-15',
   },
   {
     name: '剪映',
@@ -199,6 +243,8 @@ export const tools = [
     category: 'video',
     tags: ['剪辑', 'AI功能', '免费'],
     gradient: 'from-teal-500 to-green-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Vidu',
@@ -207,6 +253,8 @@ export const tools = [
     category: 'video',
     tags: ['国产', '动画', '连贯'],
     gradient: 'from-indigo-500 to-blue-600',
+    pricing: 'freemium',
+    addedAt: '2025-05-15',
   },
   {
     name: 'Luma',
@@ -215,6 +263,8 @@ export const tools = [
     category: 'video',
     tags: ['3D重建', '手机扫描', '创新'],
     gradient: 'from-purple-500 to-violet-600',
+    pricing: 'freemium',
+    addedAt: '2025-04-01',
   },
   {
     name: 'Pixverse',
@@ -223,6 +273,8 @@ export const tools = [
     category: 'video',
     tags: ['社区', '多模态', '免费额度'],
     gradient: 'from-rose-500 to-pink-600',
+    pricing: 'freemium',
+    addedAt: '2025-05-20',
   },
 
   // ========== 编程开发 ==========
@@ -233,6 +285,8 @@ export const tools = [
     category: 'coding',
     tags: ['代码补全', 'VS Code', '付费'],
     gradient: 'from-gray-500 to-slate-600',
+    pricing: 'paid',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Cursor',
@@ -241,6 +295,8 @@ export const tools = [
     category: 'coding',
     tags: ['AI IDE', '对话', '多文件'],
     gradient: 'from-indigo-500 to-violet-600',
+    pricing: 'freemium',
+    addedAt: '2025-02-01',
   },
   {
     name: 'Windsurf',
@@ -249,6 +305,8 @@ export const tools = [
     category: 'coding',
     tags: ['免费', 'IDE', '多文件'],
     gradient: 'from-blue-500 to-indigo-600',
+    pricing: 'freemium',
+    addedAt: '2025-04-15',
   },
   {
     name: 'Claude Code',
@@ -257,6 +315,8 @@ export const tools = [
     category: 'coding',
     tags: ['CLI', 'Agent', '终端'],
     gradient: 'from-amber-500 to-orange-600',
+    pricing: 'freemium',
+    addedAt: '2025-05-25',
   },
   {
     name: '通义灵码',
@@ -265,6 +325,8 @@ export const tools = [
     category: 'coding',
     tags: ['阿里', '免费', '中文'],
     gradient: 'from-purple-500 to-pink-500',
+    pricing: 'free',
+    addedAt: '2025-03-01',
   },
   {
     name: 'Tabnine',
@@ -273,6 +335,8 @@ export const tools = [
     category: 'coding',
     tags: ['隐私', '本地部署', '企业'],
     gradient: 'from-emerald-500 to-green-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Replit',
@@ -281,6 +345,8 @@ export const tools = [
     category: 'coding',
     tags: ['在线IDE', '部署', '协作'],
     gradient: 'from-orange-500 to-red-500',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'OpenAI Codex',
@@ -289,6 +355,8 @@ export const tools = [
     category: 'coding',
     tags: ['OpenAI', 'API', '自然语言编程'],
     gradient: 'from-green-500 to-emerald-600',
+    pricing: 'paid',
+    addedAt: '2025-05-01',
   },
 
   // ========== 音频音乐 ==========
@@ -299,6 +367,8 @@ export const tools = [
     category: 'audio',
     tags: ['音乐', '人声', '创作'],
     gradient: 'from-pink-500 to-rose-600',
+    pricing: 'freemium',
+    addedAt: '2025-02-15',
   },
   {
     name: 'ElevenLabs',
@@ -307,6 +377,8 @@ export const tools = [
     category: 'audio',
     tags: ['语音', '多语言', '逼真'],
     gradient: 'from-purple-500 to-indigo-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: '讯飞智作',
@@ -315,6 +387,8 @@ export const tools = [
     category: 'audio',
     tags: ['讯飞', '配音', '虚拟主播'],
     gradient: 'from-blue-400 to-cyan-500',
+    pricing: 'freemium',
+    addedAt: '2025-03-15',
   },
   {
     name: '剪映音频',
@@ -323,6 +397,8 @@ export const tools = [
     category: 'audio',
     tags: ['配音', '音效', '免费'],
     gradient: 'from-teal-500 to-emerald-600',
+    pricing: 'free',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Descript',
@@ -331,6 +407,8 @@ export const tools = [
     category: 'audio',
     tags: ['转录', '剪辑', '语音克隆'],
     gradient: 'from-violet-500 to-purple-600',
+    pricing: 'freemium',
+    addedAt: '2025-04-01',
   },
 
   // ========== 设计工具 ==========
@@ -341,6 +419,8 @@ export const tools = [
     category: 'design',
     tags: ['设计', 'PPT', '零门槛'],
     gradient: 'from-cyan-400 to-blue-500',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: '稿定 AI',
@@ -349,6 +429,8 @@ export const tools = [
     category: 'design',
     tags: ['电商', '新媒体', '中文'],
     gradient: 'from-orange-400 to-pink-500',
+    pricing: 'freemium',
+    addedAt: '2025-03-01',
   },
   {
     name: '即时设计',
@@ -357,6 +439,8 @@ export const tools = [
     category: 'design',
     tags: ['UI设计', '协作', '国产'],
     gradient: 'from-indigo-400 to-purple-500',
+    pricing: 'freemium',
+    addedAt: '2025-02-01',
   },
 
   // ========== 办公效率 ==========
@@ -367,6 +451,8 @@ export const tools = [
     category: 'productivity',
     tags: ['笔记', '写作', '协作'],
     gradient: 'from-zinc-500 to-neutral-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: 'Gamma',
@@ -375,6 +461,8 @@ export const tools = [
     category: 'productivity',
     tags: ['PPT', '演示', '快速'],
     gradient: 'from-lime-500 to-green-600',
+    pricing: 'freemium',
+    addedAt: '2025-03-15',
   },
   {
     name: 'NotebookLM',
@@ -383,6 +471,8 @@ export const tools = [
     category: 'productivity',
     tags: ['Google', '播客', '笔记'],
     gradient: 'from-yellow-500 to-amber-600',
+    pricing: 'free',
+    addedAt: '2025-04-15',
   },
   {
     name: '沉浸式翻译',
@@ -391,6 +481,8 @@ export const tools = [
     category: 'productivity',
     tags: ['翻译', '双语', '浏览器'],
     gradient: 'from-sky-400 to-blue-500',
+    pricing: 'freemium',
+    addedAt: '2025-02-15',
   },
   {
     name: 'Jasper',
@@ -399,6 +491,8 @@ export const tools = [
     category: 'productivity',
     tags: ['营销', 'SEO', '品牌'],
     gradient: 'from-red-400 to-orange-500',
+    pricing: 'paid',
+    addedAt: '2025-01-15',
   },
 
   // ========== AI 搜索 ==========
@@ -409,6 +503,8 @@ export const tools = [
     category: 'search',
     tags: ['搜索', '引用', '实时'],
     gradient: 'from-emerald-500 to-teal-600',
+    pricing: 'freemium',
+    addedAt: '2025-01-15',
   },
   {
     name: '秘塔 AI',
@@ -417,6 +513,8 @@ export const tools = [
     category: 'search',
     tags: ['中文', '学术', '深度'],
     gradient: 'from-blue-500 to-sky-600',
+    pricing: 'free',
+    addedAt: '2025-03-01',
   },
   {
     name: '天工 AI',
@@ -425,6 +523,8 @@ export const tools = [
     category: 'search',
     tags: ['中文', '深度', '免费'],
     gradient: 'from-cyan-500 to-blue-600',
+    pricing: 'free',
+    addedAt: '2025-04-01',
   },
   {
     name: 'Devv',
@@ -433,5 +533,7 @@ export const tools = [
     category: 'search',
     tags: ['开发者', '编程', '中文'],
     gradient: 'from-violet-500 to-purple-600',
+    pricing: 'free',
+    addedAt: '2025-05-01',
   },
 ]
