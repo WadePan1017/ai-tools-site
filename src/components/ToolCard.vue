@@ -58,15 +58,22 @@ function handleClick() {
       <!-- 顶部：图标 + 操作按钮 -->
       <div class="flex items-start justify-between mb-3">
         <div class="relative">
-          <div :class="['w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-white text-lg font-bold overflow-hidden', tool.gradient]">
+          <div
+            v-if="faviconUrl && !iconError"
+            class="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center bg-dark-lighter"
+          >
             <img
-              v-if="faviconUrl && !iconError"
               :src="faviconUrl"
               :alt="tool.name"
-              class="w-6 h-6 object-contain"
+              class="w-full h-full object-cover"
               @error="iconError = true"
             />
-            <span v-else>{{ tool.name.charAt(0) }}</span>
+          </div>
+          <div
+            v-else
+            :class="['w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-white text-lg font-bold', tool.gradient]"
+          >
+            {{ tool.name.charAt(0) }}
           </div>
           <!-- NEW 角标 -->
           <span v-if="isNew" class="absolute -top-1.5 -right-1.5 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">
