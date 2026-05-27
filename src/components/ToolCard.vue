@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useFavorites, useVotes } from '../composables/useStorage.js'
 
 const props = defineProps({
@@ -30,6 +30,17 @@ const pricingClass = computed(() => {
   return map[props.tool.pricing] || ''
 })
 
+const faviconUrl = computed(() => {
+  try {
+    const host = new URL(props.tool.url).hostname
+    return `https://www.google.com/s2/favicons?domain=${host}&sz=64`
+  } catch {
+    return ''
+  }
+})
+
+const iconError = ref(false)
+
 function handleClick() {
   props.onVisit(props.tool.name)
 }
@@ -47,8 +58,15 @@ function handleClick() {
       <!-- 顶部：图标 + 操作按钮 -->
       <div class="flex items-start justify-between mb-3">
         <div class="relative">
-          <div :class="['w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-white text-lg font-bold', tool.gradient]">
-            {{ tool.name.charAt(0) }}
+          <div :class="['w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-white text-lg font-bold overflow-hidden', tool.gradient]">
+            <img
+              v-if="faviconUrl && !iconError"
+              :src="faviconUrl"
+              :alt="tool.name"
+              class="w-6 h-6 object-contain"
+              @error="iconError = true"
+            />
+            <span v-else>{{ tool.name.charAt(0) }}</span>
           </div>
           <!-- NEW 角标 -->
           <span v-if="isNew" class="absolute -top-1.5 -right-1.5 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">
