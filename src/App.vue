@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
+import About from './components/About.vue'
 import ToolGrid from './components/ToolGrid.vue'
 import Footer from './components/Footer.vue'
 import { categories, tools } from './data/tools.js'
@@ -76,7 +77,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Categories -->
-      <div class="flex flex-wrap justify-center gap-3">
+      <div class="flex md:flex-wrap justify-start md:justify-center gap-3 overflow-x-auto pb-2 scrollbar-hide">
         <button
           v-for="cat in categories"
           :key="cat.id"
@@ -128,5 +129,6 @@ onUnmounted(() => {
     <!-- Results -->
     <ToolGrid :tools="filteredTools" :on-visit="addRecent" />
   </main>
+  <About />
   <Footer />
 </template>

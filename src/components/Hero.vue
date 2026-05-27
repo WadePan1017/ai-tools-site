@@ -1,3 +1,10 @@
+<script setup>
+import { tools, categories } from '../data/tools.js'
+
+const toolCount = tools.length
+const categoryCount = categories.length - 1
+</script>
+
 <template>
   <section id="hero" class="min-h-[60vh] flex items-center justify-center relative overflow-hidden pt-16">
     <div class="absolute inset-0">
@@ -12,9 +19,27 @@
         <span class="gradient-text">AI 工具</span>
         的世界
       </h1>
-      <p class="text-gray max-w-xl mx-auto text-lg">
+      <p class="text-gray max-w-xl mx-auto text-lg mb-10">
         收录优质的 AI 工具和资源，帮助你发现和使用人工智能提升效率
       </p>
+
+      <!-- 统计数字 -->
+      <div class="flex items-center justify-center gap-8 md:gap-12">
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-primary">{{ toolCount }}+</div>
+          <div class="text-gray text-sm mt-1">收录工具</div>
+        </div>
+        <div class="w-px h-10 bg-dark-border"></div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-primary">{{ categoryCount }}</div>
+          <div class="text-gray text-sm mt-1">工具分类</div>
+        </div>
+        <div class="w-px h-10 bg-dark-border"></div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-primary">免费</div>
+          <div class="text-gray text-sm mt-1">无需注册</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>

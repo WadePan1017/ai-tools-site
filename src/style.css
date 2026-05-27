@@ -85,3 +85,12 @@ body {
   background: rgba(234, 179, 8, 0.15);
   color: #facc15;
 }
+
+/* 隐藏滚动条 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
