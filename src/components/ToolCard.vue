@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, ref } from 'vue'
 import { useFavorites, useVotes } from '../composables/useStorage.js'
 
@@ -39,6 +39,11 @@ const faviconUrl = computed(() => {
   }
 })
 
+// 优先使用 affiliate 链接
+const linkUrl = computed(() => {
+  return props.tool.affiliateUrl || props.tool.url
+})
+
 const iconError = ref(false)
 
 function handleClick() {
@@ -48,7 +53,7 @@ function handleClick() {
 
 <template>
   <a
-    :href="tool.url"
+    :href="linkUrl"
     target="_blank"
     rel="noopener noreferrer"
     class="group glow-card p-6 block"
@@ -75,9 +80,13 @@ function handleClick() {
           >
             {{ tool.name.charAt(0) }}
           </div>
-          <!-- NEW 角标 -->
+          <!-- NEW 标签 -->
           <span v-if="isNew" class="absolute -top-1.5 -right-1.5 bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">
             NEW
+          </span>
+          <!-- 推荐标签 -->
+          <span v-if="tool.featured" class="absolute -top-1.5 -right-1.5 bg-amber-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">
+            推荐
           </span>
         </div>
 

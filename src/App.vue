@@ -1,9 +1,11 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import About from './components/About.vue'
 import ToolGrid from './components/ToolGrid.vue'
+import FeaturedTools from './components/FeaturedTools.vue'
+import AdBanner from './components/AdBanner.vue'
 import Footer from './components/Footer.vue'
 import { categories, tools } from './data/tools.js'
 import { useRecentlyViewed } from './composables/useStorage.js'
@@ -60,6 +62,12 @@ onUnmounted(() => {
   <Navbar />
   <Hero />
   <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- 热门推荐 (置顶) -->
+    <FeaturedTools v-if="!isSearching" />
+
+    <!-- 广告位 (顶部) -->
+    <AdBanner v-if="!isSearching" position="top" />
+
     <!-- Search & Filter -->
     <div class="mb-10 space-y-6">
       <!-- Search -->
@@ -113,7 +121,7 @@ onUnmounted(() => {
         <a
           v-for="tool in recentTools"
           :key="tool.name"
-          :href="tool.url"
+          :href="tool.affiliateUrl || tool.url"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 px-4 py-2 bg-dark-light border border-dark-border rounded-xl text-sm text-gray hover:text-white hover:border-primary/30 transition-all"
@@ -128,6 +136,9 @@ onUnmounted(() => {
 
     <!-- Results -->
     <ToolGrid :tools="filteredTools" :on-visit="addRecent" />
+
+    <!-- 广告位 (底部) -->
+    <AdBanner position="bottom" />
   </main>
   <About />
   <Footer />

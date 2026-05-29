@@ -1,4 +1,4 @@
-export const categories = [
+﻿export const categories = [
   { id: 'all', name: '全部', icon: '🔥' },
   { id: 'chat', name: '聊天对话', icon: '💬' },
   { id: 'image', name: '图像生成', icon: '🎨' },
@@ -14,6 +14,8 @@ export const tools = [
   // ========== 聊天对话 ==========
   {
     name: 'ChatGPT',
+    featured: true,
+    affiliateUrl: '',
     description: 'OpenAI 推出的旗舰对话 AI，支持文本、图像、代码等多模态交互，插件生态丰富',
     url: 'https://chat.openai.com',
     category: 'chat',
@@ -44,6 +46,7 @@ export const tools = [
   },
   {
     name: 'DeepSeek',
+    featured: true,
     description: '深度求索推出的开源大模型，数学推理和编程能力全球顶尖',
     url: 'https://chat.deepseek.com',
     category: 'chat',
@@ -176,6 +179,8 @@ export const tools = [
   // ========== 图像生成 ==========
   {
     name: 'Midjourney',
+    featured: true,
+    affiliateUrl: '',
     description: '顶级的 AI 图像生成工具，艺术风格出众，海报和概念设计首选',
     url: 'https://www.midjourney.com',
     category: 'image',
@@ -380,6 +385,8 @@ export const tools = [
   },
   {
     name: 'Cursor',
+    featured: true,
+    affiliateUrl: '',
     description: '基于 VS Code 的 AI 原生编辑器，全代码库索引，多行编辑预测',
     url: 'https://cursor.sh',
     category: 'coding',
