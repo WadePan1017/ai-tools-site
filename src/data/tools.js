@@ -694,6 +694,17 @@ export const tools = [
 
   // ========== AI 搜索 ==========
   {
+    name: 'AI Tools Radar',
+    featured: true,
+    description: 'AI 工具导航与产业资讯平台，帮助发现、比较和追踪 AI 产品，并提供每日 AI 行业资讯',
+    url: 'https://aitoolsradar.com',
+    category: 'search',
+    tags: ['工具导航', 'AI 资讯', '产品发现'],
+    gradient: 'from-cyan-500 to-blue-600',
+    pricing: 'freemium',
+    addedAt: '2026-09-16',
+  },
+  {
     name: 'Perplexity',
     description: 'AI 原生搜索引擎，提供带引用来源的精准答案，几乎无幻觉',
     url: 'https://www.perplexity.ai',
