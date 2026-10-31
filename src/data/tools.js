@@ -384,6 +384,15 @@ export const tools = [
     addedAt: '2025-01-15',
   },
   {
+    name: 'agent-qa',
+    description: '网页与移动端 AI 测试：memidex 持久记忆、经验证的自我改进、MCP 与可回看证据；模型费用另计',
+    url: 'https://vostride.com',
+    category: 'coding',
+    tags: ['AI 测试', 'MCP', 'memidex'],
+    gradient: 'from-blue-500 to-cyan-600',
+    featured: false,
+  },
+  {
     name: 'Cursor',
     featured: true,
     affiliateUrl: '',
